@@ -30,6 +30,7 @@
 （3）编译后会出现两个 class 文件
 ### 匿名内部类
 参见 com.solverpeng.innerclass.anonymous 包
+
 （1）匿名内部类不能有访问修饰符和static修饰符
 
 （2）匿名内部类在编译的时候由系统自动起名为：OuterClass$n.class 其中 n 为正整数
