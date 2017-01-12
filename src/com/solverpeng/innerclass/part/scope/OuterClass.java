@@ -7,9 +7,11 @@ public class OuterClass {
     private int age = 12;
 
     public void print(final boolean x, final String value) {
+        final String name = "lily";
         if (x) {
             class InnerClass {
                 public void print() {
+                    System.out.println(name);
                     System.out.println(value);
                     System.out.println(age);
                 }

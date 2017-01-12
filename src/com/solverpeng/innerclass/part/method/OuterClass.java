@@ -24,19 +24,18 @@ public class OuterClass {
     }
 
     public void outerMethod(final int value) {// 这里 value 必须设置为 final 类型
+        final String name = "lily";
         field = 12;
         field2 = "lily";
         final String field3 = "java";
         class InnerClass {
             public void print() {
+                System.out.println("name:" + name);
                 System.out.println(value);
                 System.out.println("field:" + field + ", field2:" + field2 + ", field3:" + field3);
             }
         }
         new InnerClass().print();
     }
-
-
-
 
 }
