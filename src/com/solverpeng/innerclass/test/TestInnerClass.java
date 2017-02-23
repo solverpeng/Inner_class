@@ -9,6 +9,14 @@ import org.junit.Test;
  */
 public class TestInnerClass {
     @Test
+    public void testMethodInnerClass() {
+        com.solverpeng.innerclass.part.method.OuterClass outerClass = new com.solverpeng.innerclass.part.method.OuterClass();
+        System.out.println(outerClass);
+        outerClass.outerMethod(12);
+        System.out.println(outerClass);
+    }
+
+    @Test
     public void testStaticInnerClass() {
         com.solverpeng.innerclass.mystatic.OuterClass outerClass = new com.solverpeng.innerclass.mystatic.OuterClass();
         outerClass.display();

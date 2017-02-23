@@ -38,4 +38,11 @@ public class OuterClass {
         new InnerClass().print();
     }
 
+    @Override
+    public String toString() {
+        return "OuterClass{" +
+                "field=" + field +
+                ", field2='" + field2 + '\'' +
+                '}';
+    }
 }
